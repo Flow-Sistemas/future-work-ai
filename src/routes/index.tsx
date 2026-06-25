@@ -156,10 +156,10 @@ function Hero() {
           playsInline
           className="w-full h-full object-cover object-[15%_5%]"
         />
-        {/* gradiente pesado na parte inferior — texto fica no fundo */}
+        {/* leve escurecimento apenas para legibilidade dos botões, sem cobrir o título */}
         <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, oklch(0.14 0.03 250) 38%, oklch(0.14 0.03 250 / 70%) 60%, transparent 100%)" }}
+          className="absolute inset-x-0 bottom-0 h-[35%]"
+          style={{ background: "linear-gradient(to top, oklch(0.14 0.03 250 / 75%) 0%, transparent 100%)" }}
         />
       </div>
 

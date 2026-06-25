@@ -24,7 +24,7 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
       try {
         // Initialize the vanilla @splinetool/runtime Application directly on the canvas element.
         // This is SSR-safe and fully compatible with React 19 since it bypasses the react-spline package hooks.
-        splineApp = new Application(canvas)
+        splineApp = new Application(canvas!)
         await splineApp.load(scene)
         if (isMounted) {
           setLoading(false)
