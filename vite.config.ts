@@ -12,4 +12,19 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    resolve: {
+      dedupe: ["react", "react-dom"],
+    },
+    server: {
+      proxy: {
+        "/__l5e": {
+          target: "https://lovable.dev",
+          changeOrigin: true,
+          secure: true,
+        },
+      },
+    },
+  },
 });
+

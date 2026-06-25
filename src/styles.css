@@ -94,3 +94,27 @@
 @utility neon-border {
   box-shadow: 0 0 0 1px oklch(0.85 0.22 145 / 30%), 0 0 24px oklch(0.85 0.22 145 / 20%);
 }
+
+/* Hero entry animations */
+@keyframes heroSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
