@@ -154,7 +154,7 @@ function Hero() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover object-[15%_10%]"
+          className="w-full h-full object-cover object-[15%_5%]"
         />
         {/* gradiente pesado na parte inferior — texto fica no fundo */}
         <div
